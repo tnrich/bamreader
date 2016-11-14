@@ -1,9 +1,20 @@
 {
   "name": "bamreader",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "object to read bams",
   "homepage": "http://github.com/shinout/bamreader",
   "author": "Shin Suzuki<shinout310@gmail.com>",
+  "contributors": [
+      {
+	  "name": "Shin Suzuki",
+	  "email": "shinout310@gmail.com"
+      },
+      {
+	  "name": "Matthew Ralston",
+	  "email": "mrals89@gmail.com",
+	  "url": "http://MatthewRalston.github.io"
+      }
+  ],
   "keywords": [
     "bam",
     "bioinfo",
@@ -19,7 +30,8 @@
     "node": ">= 0.8.0"
   },
   "dependencies": {
-    "bgzf": ">= 0.0.0"
+    "bgzf": "git+http://git@github.com/MatthewRalston/bgzf.git#master",
+    "termcolor": "^0.2.0"
   },
   "devDependencies": {
     "coffee-script": ">= 1.7.1",

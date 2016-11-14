@@ -6,7 +6,9 @@ Uses samtools If exists, otherwise uses a native parser.
 installation
 ----------------
 ```bash
-$ npm install -g bamreader
+$ npm install bamreader 
+# May require CC and CXX environmental variables on certain distributions pointing to `Nan` compatible GCC version. 
+# 4.9.0 has worked in the past
 ```
 
 usage
