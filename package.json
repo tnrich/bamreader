@@ -1,6 +1,6 @@
 {
   "name": "ve-bamreader",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "object to read bams (forked from shinout/bamreader)",
   "homepage": "http://github.com/tnrich/bamreader",
   "author": "Thomas Rich<tnrich310@gmail.com>",
