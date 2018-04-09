@@ -1,3 +1,5 @@
+Note: Forked from shinout bamreader (all credit goes to shinout)
+
 BAMReader
 ==========
 BAMReader is a reader to parse .bam files.
