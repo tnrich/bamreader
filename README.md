@@ -8,7 +8,7 @@ Uses samtools If exists, otherwise uses a native parser.
 installation
 ----------------
 ```bash
-$ npm install bamreader 
+$ npm install ve-bamreader 
 # May require CC and CXX environmental variables on certain distributions pointing to `Nan` compatible GCC version. 
 # 4.9.0 has worked in the past
 ```
@@ -16,17 +16,8 @@ $ npm install bamreader
 usage
 -------------
 ```js
-var BAMReader = require("bamreader");
-var reader = BAMReader.create("/path/to/bamfile.bam");
-reader.on("bam", function(bam) {
-  // bam: object. see "bam object" section
-  console.log(bam.seq, bam.qual);
-  console.log(bam.pair); // pair bam object of the bam. To do this, indexing is needed.
-});
-
-reader.on("end", function() {
-  console.log("all bam alignments have been read.");
-});
+const bamReader = require("ve-bamreader");
+const bamInfo = bamReader("/path/to/bamfile.bam");
 ```
 
 bam object
